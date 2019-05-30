@@ -1,0 +1,90 @@
+.c-btn {
+  padding: 10px;
+  color: $color-white;
+  background-color: $color-gray-30;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border .25s ease-in-out;
+  border-radius: 3px;
+  &:hover {
+    border: 3px solid $color-secondary;
+  }
+  &--flush {
+    padding: 0;
+  }
+  &--tiny {
+    padding: $inuit-global-spacing-unit-tiny;
+  }
+  &--small {
+    padding: $inuit-global-spacing-unit-small;
+  }
+  &--large {
+    padding: $inuit-global-spacing-unit-large;
+  }
+
+  &--huge {
+    padding: $inuit-global-spacing-unit-huge;
+  }
+
+  &--success {
+    background-color: $color-success;
+  }
+  &--error {
+    background-color: $color-error;
+
+  }
+  &--warning {
+    background-color: $color-warning;
+
+  }
+  &--info {
+    background-color: $color-info;
+
+  }
+}
+
+// Si queremos crear componentes es muy util utilizar variables globales con las que crear componentes acorde a todo el
+// proyecto. Ej: variables de espaciado o colores
+
+// Como no hacerlo
+
+//.c-btn {
+//  border: 0;
+//  cursor: pointer;
+//  &--flush {
+//    padding: 0;
+//  }
+//  &--tiny {
+//    padding: $inuit-global-spacing-unit-tiny;
+//  }
+//  &--small {
+//    padding: $inuit-global-spacing-unit-small;
+//  }
+//  &--large {
+//    padding: $inuit-global-spacing-unit-large;
+//  }
+//
+//  &--huge {
+//    padding: $inuit-global-spacing-unit-huge;
+//  }
+//
+//  &--success {
+//    background-color: $color-success;
+//  }
+//  &--error {
+//    background-color: $color-error;
+//
+//  }
+//  &--warning {
+//    background-color: $color-warning;
+//
+//  }
+//  &--info {
+//    background-color: $color-info;
+//
+//  }
+//}
+
+// Si creamos una serie de modificadores, estos tienen que modificar algo.
+// EJ: añadimos un modificador que pone el background a verde. Si el bloque o elemento no tuviera un background por
+// defecto esta modificación no tendría sentido, sería más fácil agregar ese color verde al bloque o elemento por defecto

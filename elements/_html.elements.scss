@@ -1,0 +1,15 @@
+//*********************************************************************************
+//  #HTML
+//*********************************************************************************
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-font-color;
+  background-color: $base-background-color;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: $base-font-family;
+  position: relative;
+  width: 100%;
+}

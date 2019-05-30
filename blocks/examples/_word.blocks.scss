@@ -1,0 +1,39 @@
+.c-word {
+  &__letter, &__letter-wrap {
+    display: block;
+    position: relative;
+    z-index: 100;
+  }
+  &__letter {
+    pointer-events: none;
+    &:not(:last-child) {
+      position: absolute;
+      color: $color-gray-30;
+      opacity: 0;
+    }
+  }
+}
+
+// Como no hacerlo
+
+//.c-word {
+//  span {
+//    display: block;
+//    position: relative;
+//    z-index: 100;
+//    span {
+//      pointer-events: none;
+//      &:not(:last-child) {
+//        position: absolute;
+//        color: $color-gray-30;
+//        opacity: 0;
+//      }
+//    }
+//  }
+//}
+
+// A simple vista puese ser más sencillo y ordenado pero de esta forma perdemos legibilidad y orden.
+// Mediante la asignación de elementos podemos de un vistazo saber a que elemento del HTML nos referimos en todo momento
+
+
+

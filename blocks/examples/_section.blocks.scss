@@ -1,0 +1,11 @@
+.c-section {
+  padding-bottom: $inuit-global-spacing-unit-huge;
+
+  &__content {
+    display: block;
+    padding: $inuit-global-spacing-unit-huge $inuit-global-spacing-unit-large;
+  }
+  &--big {
+    padding-bottom: $inuit-global-spacing-unit-huge * 2;
+  }
+}

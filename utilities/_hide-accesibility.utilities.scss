@@ -1,0 +1,8 @@
+.u-hide-accesibility {
+  position: absolute !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden !important;
+  clip: rect(1px 1px 1px 1px) !important; /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}

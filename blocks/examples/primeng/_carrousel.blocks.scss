@@ -1,0 +1,54 @@
+.c-carrousel {
+  .ui-carousel {
+    border: 3px solid $color-gray-30;
+    padding: 5px;
+    border-radius: 3px;
+    .ui-carousel-header {
+      border-radius: 0;
+      background: $color-secondary;
+      padding: 25px;
+      border: 0;
+      margin: 0 0 15px 0;
+      overflow: visible;
+      .ui-carousel-header-title {
+        color: $color-white;
+        font-family: 'Monoton-Regular';
+        font-size: $fs-24;
+        overflow: visible;
+      }
+    }
+    .ui-carousel-viewport .ui-carousel-items .ui-carousel-item {
+      border: 3px solid $color-secondary;
+      padding: 25px;
+      background-color: transparentize($color-secondary, 0.90);
+    }
+  }
+  .fa-circle-o {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: $color-gray-30;
+  }
+  .fa-dot-circle-o {
+    border: 5px solid $color-white;
+  }
+
+  // Modificador
+
+  &--sec {
+    .ui-carousel {
+      border: 3px solid $color-secondary;
+      .ui-carousel-header {
+        background: $color-gray-30;
+      }
+      .ui-carousel-viewport .ui-carousel-items .ui-carousel-item {
+        border: 3px solid $color-gray-30;
+      }
+    }
+    .fa-circle-o {
+
+      background-color: $color-secondary;
+    }
+  }
+}
+

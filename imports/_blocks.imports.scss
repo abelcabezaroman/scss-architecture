@@ -1,0 +1,17 @@
+// Discrete, complete chunks of UI (e.g. .b-carousel {}, .b-btn {}, .b-table {}, .b-header {}). 
+// You can create subfolders to organize your blocks (e.g. you create a subfolder "form" and inside you have the files input.blocks, dropdown.blocks, checkbox.blocks...)
+
+@import "../blocks/examples/primeng/card.blocks";
+@import "../blocks/examples/primeng/progress-bar.blocks";
+@import "../blocks/examples/primeng/carrousel.blocks";
+@import "../blocks/examples/words/title.blocks";
+@import "../blocks/examples/words/subtitle.blocks";
+@import "../blocks/examples/main.blocks";
+@import "../blocks/examples/welcome.blocks";
+@import "../blocks/examples/nav.blocks";
+@import "../blocks/examples/word.blocks";
+@import "../blocks/examples/nav-sec.blocks";
+@import "../blocks/examples/angular/button.blocks";
+@import "../blocks/examples/btn.blocks";
+@import "../blocks/examples/section.blocks";
+@import "../blocks/examples/gallery.blocks";

@@ -1,0 +1,23 @@
+.c-welcome {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__title {
+    font-size: $fs-150;
+    font-family: Monoton-Regular;
+    word-spacing: 50px;
+    display: flex;
+  }
+  &__logo {
+    transition: transform .75s ease-in-out;
+    transform-style: preserve-3d;
+
+    &:hover {
+      transform: rotate3d(0, 1, 0, 180deg);
+    }
+  }
+}

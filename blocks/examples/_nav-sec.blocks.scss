@@ -1,0 +1,33 @@
+.c-nav-sec {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  display: block;
+  text-align: center;
+  &__link {
+    overflow: hidden;
+    padding: 25px 25px 25px 75px;
+    display: inline-block;
+    font-size: $fs-24;
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-gray-30;
+    transition: padding 0.25s cubic-bezier(0.68, -1, 0.27, 2);
+    &:before {
+      content: $i-form-arrowDown;
+      font-family: 'my-icons';
+      color: $color-white;
+      position: absolute;
+      left: 25px;
+      transition: transform 0.1s ease-in-out;
+      transform: rotate(90deg);
+    }
+    &:hover {
+      padding: 25px 25px 25px 50px;
+      &:before {
+        transform: scale(10) rotate(90deg);
+
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.c-subtitle {
+  font-size: $fs-60;
+  font-family: 'Monoton-Regular';
+  text-transform: uppercase;
+  border-bottom: 3px solid $color-secondary;
+  text-shadow: -11px -11px 0px $color-secondary;
+  color: transparentize($color-gray-30, 0.9);
+}

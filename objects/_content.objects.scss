@@ -1,0 +1,62 @@
+/* ==========================================================================
+   #CONTAINER
+   ========================================================================== */
+
+/**
+ * The container object simply containeres off content. Extend with cosmetic styles in the
+ * Components layer.
+ *
+ * 1. So we can apply the `.o-content` class to naturally-inline elements.
+ */
+
+.o-content {
+  @include inuit-clearfix();
+  display: block;
+  //display: block;
+  /* [1] */
+  padding-top: $inuit-global-spacing-unit;
+  padding-bottom: $inuit-global-spacing-unit;
+  // >:last-child {
+  //	padding-bottom: 0;
+  //}
+
+  /* Size variants
+   ========================================================================== */
+
+  &--flush {
+    padding: 0;
+  }
+
+  &--tiny {
+    padding-top: $inuit-global-spacing-unit-tiny;
+    padding-bottom: $inuit-global-spacing-unit-tiny;
+  }
+
+  &--small {
+    padding-top: $inuit-global-spacing-unit-small;
+    padding-bottom: $inuit-global-spacing-unit-small;
+  }
+
+  &--large {
+    padding-top: $inuit-global-spacing-unit-large;
+    padding-bottom: $inuit-global-spacing-unit-large;
+  }
+
+  &--huge {
+    padding-top: $inuit-global-spacing-unit-huge;
+    padding-bottom: $inuit-global-spacing-unit-huge;
+  }
+
+  /* Container reset
+     ****************************************************************************/
+
+  &--no-t {
+    padding-top: 0;
+  }
+
+  &--no-b {
+    padding-bottom: 0;
+  }
+
+}
+

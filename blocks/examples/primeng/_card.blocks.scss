@@ -1,0 +1,35 @@
+.c-card {
+  .ui-card {
+    transition: border .5s ease-in-out;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    border: 5px solid transparent;
+  }
+  .ui-card-title {
+    font-family: 'Monoton-Regular';
+  }
+  &:hover {
+    .ui-card {
+      border: 5px solid $color-secondary;
+    }
+  }
+}
+
+// Como no hacerlo
+
+//.ui-card {
+//  transition: border .5s ease-in-out;
+//  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+//  border: 5px solid transparent;
+//}
+//.ui-card-title {
+//  font-family: 'Monoton-Regular';
+//}
+//&:hover {
+//  .ui-card {
+//    border: 5px solid $color-secondary;
+//  }
+//}
+
+// Lo ideal es utilizar la menor cantidad de estilos esternos posibles para mantener el control de los mismos.
+// Siempre que utilicemos un componente externo debemos encapsularlo con nuestra propia clase para poder añadir un
+// nivel más de especificidad y que sea más comodo sobreescribir estilos.
