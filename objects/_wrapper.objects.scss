@@ -1,0 +1,8 @@
+.o-wrapper {
+  @include inuit-clearfix();
+  max-width: $ $base-wrapper-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $base-spacing;
+  padding-left: $base-spacing;
+}

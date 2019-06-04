@@ -11,42 +11,48 @@
 
 .o-wrap {
   @include inuit-clearfix();
-  //display: block;
-  /* [1] */
-  padding-left: $inuit-global-spacing-unit;
-  padding-right: $inuit-global-spacing-unit;
-  // >:last-child {
-  //	padding-right: 0;
-  //}
+  display: block;
+  padding-right: $base-spacing;
+  padding-left: $base-spacing;
 
   /* Size variants
-   ========================================================================== */
+     ****************************************************************************/
 
-  &--flush {
+  &--zero {
     padding: 0;
   }
 
-  &--tiny {
-    padding-left: $inuit-global-spacing-unit-tiny;
-    padding-right: $inuit-global-spacing-unit-tiny;
+  &--xs {
+    padding-right: $base-spacing-xs;
+    padding-left: $base-spacing-xs;
   }
 
-  &--small {
-    padding-left: $inuit-global-spacing-unit-small;
-    padding-right: $inuit-global-spacing-unit-small;
+  &--s {
+    padding-right: $base-spacing-s;
+    padding-left: $base-spacing-s;
   }
 
-  &--large {
-    padding-left: $inuit-global-spacing-unit-large;
-    padding-right: $inuit-global-spacing-unit-large;
+  &--m {
+    padding-right: $base-spacing-m;
+    padding-left: $base-spacing-m;
   }
 
-  &--huge {
-    padding-left: $inuit-global-spacing-unit-huge;
-    padding-right: $inuit-global-spacing-unit-huge;
+  &--l {
+    padding-right: $base-spacing-l;
+    padding-left: $base-spacing-l;
   }
 
-  /* Container reset
+  &--xl {
+    padding-right: $base-spacing-xl;
+    padding-left: $base-spacing-xl;
+  }
+
+  &--xxl {
+    padding-right: $base-spacing-xxl;
+    padding-left: $base-spacing-xxl;
+  }
+
+  /* Reset
      ****************************************************************************/
 
   &--no-l {
@@ -56,10 +62,4 @@
   &--no-r {
     padding-right: 0;
   }
-
-  &--full {
-    width: 100%;
-  }
 }
-
-

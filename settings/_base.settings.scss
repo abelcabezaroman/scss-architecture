@@ -1,0 +1,11 @@
+$base-global: 8px;
+
+$base-spacing-xs: $base-global * .25 !default;
+$base-spacing-s: $base-global * .5 !default;
+$base-spacing-m: $base-global * .75 !default;
+$base-spacing: $base-global !default;
+$base-spacing-l: $base-global * 2 !default;
+$base-spacing-xl: $base-global * 3 !default;
+$base-spacing-xxl: $base-global * 4 !default;
+
+$base-wrapper-width: 1200px !default;
