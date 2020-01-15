@@ -1,4 +1,4 @@
-.c-card {
+.b-card {
   .ui-card {
     transition: border .5s ease-in-out;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -9,7 +9,7 @@
   }
   &:hover {
     .ui-card {
-      border: 5px solid $color-secondary;
+      border: 5px solid $color--secondary;
     }
   }
 }
@@ -26,7 +26,7 @@
 //}
 //&:hover {
 //  .ui-card {
-//    border: 5px solid $color-secondary;
+//    border: 5px solid $color--secondary;
 //  }
 //}
 

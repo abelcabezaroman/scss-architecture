@@ -1,13 +1,13 @@
 .b-btn {
   padding: 10px;
-  color: $color-white;
-  background-color: $color-gray-30;
+  color: $color--white;
+  background-color: $color--gray-30;
   cursor: pointer;
   border: 3px solid transparent;
   transition: border .25s ease-in-out;
   border-radius: 3px;
   &:hover {
-    border: 3px solid $color-secondary;
+    border: 3px solid $color--secondary;
   }
   &--flush {
     padding: 0;
@@ -27,18 +27,18 @@
   }
 
   &--success {
-    background-color: $color-success;
+    background-color: $color--success;
   }
   &--error {
-    background-color: $color-error;
+    background-color: $color--error;
 
   }
   &--warning {
-    background-color: $color-warning;
+    background-color: $color--warning;
 
   }
   &--info {
-    background-color: $color-info;
+    background-color: $color--info;
 
   }
 }
@@ -69,18 +69,18 @@
 //  }
 //
 //  &--success {
-//    background-color: $color-success;
+//    background-color: $color--success;
 //  }
 //  &--error {
-//    background-color: $color-error;
+//    background-color: $color--error;
 //
 //  }
 //  &--warning {
-//    background-color: $color-warning;
+//    background-color: $color--warning;
 //
 //  }
 //  &--info {
-//    background-color: $color-info;
+//    background-color: $color--info;
 //
 //  }
 //}

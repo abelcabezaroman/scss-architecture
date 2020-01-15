@@ -1,17 +1,17 @@
-$c-gallery--spacing: 25px;
+$b-gallery--spacing: 25px;
 
-.c-gallery {
+.b-gallery {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   &__item {
     border-radius: 3px;
     position: relative;
-    border: 5px solid $color-secondary;
+    border: 5px solid $color--secondary;
     flex-grow: 1;
-    width: calc(50% - #{$c-gallery--spacing * 2});
-    margin: $c-gallery--spacing;
-    padding: $c-gallery--spacing;
+    width: calc(50% - #{$b-gallery--spacing * 2});
+    margin: $b-gallery--spacing;
+    padding: $b-gallery--spacing;
   }
   &__img {
     transition: filter .25s ease-in-out;
@@ -21,11 +21,11 @@ $c-gallery--spacing: 25px;
   }
   &__caption {
     position: absolute;
-    bottom: $c-gallery--spacing;
+    bottom: $b-gallery--spacing;
     left: 0;
-    background-color: $color-secondary;
-    color: $color-white;
-    padding: $c-gallery--spacing / 2;
+    background-color: $color--secondary;
+    color: $color--white;
+    padding: $b-gallery--spacing / 2;
     &--full {
       width: 100%;
       text-align: center;
@@ -35,11 +35,11 @@ $c-gallery--spacing: 25px;
       right: 0;
     }
     &--semi {
-      background-color: transparentize($color-secondary, .5);
+      background-color: transparentize($color--secondary, .5);
     }
     &--no-border {
-      left: $c-gallery--spacing;
-      width: calc(100% - #{$c-gallery--spacing * 2});
+      left: $b-gallery--spacing;
+      width: calc(100% - #{$b-gallery--spacing * 2});
     }
     &--center {
       top: 50%;

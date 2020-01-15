@@ -9,13 +9,45 @@
  * 1. So we can apply the `.o-box` class to naturally-inline elements.
  */
 
-/* Size variants
-   ========================================================================== */
 .o-box {
   @include inuit-clearfix();
-  display: block; /* [1] */
-  padding: $inuit-global-spacing-unit;
+  display: block;
+  padding: $base-spacing;
 
+  /* Size variants
+     ****************************************************************************/
+
+  &--zero {
+    padding: 0;
+  }
+
+  &--xs {
+    padding: $base-spacing-xs;
+  }
+
+  &--s {
+    padding: $base-spacing-s;
+  }
+
+  &--m {
+    padding: $base-spacing-m;
+  }
+
+  &--l {
+    padding: $base-spacing-l;
+  }
+
+  &--xl {
+    padding: $base-spacing-xl;
+  }
+
+  &--xxl {
+    padding: $base-spacing-xxl;
+  }
+
+
+  /* Reset
+     ****************************************************************************/
 
   &--no-tb {
     padding-top: 0;

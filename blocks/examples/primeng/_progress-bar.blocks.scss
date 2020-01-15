@@ -1,19 +1,19 @@
-.c-progress-bar {
+.b-progress-bar {
   .ui-progressbar {
     border           : 0;
-    background-color : $color-gray-30;
+    background-color : $color--gray-30;
     &.ui-progressbar-determinate {
       .ui-progressbar-label {
-        color : $color-white;
+        color : $color--white;
       }
       .ui-progressbar-value {
-        background-color : $color-secondary;
+        background-color : $color--secondary;
       }
     }
     &.ui-progressbar-indeterminate {
-      background-color : $color-gray-30;
+      background-color : $color--gray-30;
       .ui-progressbar-value {
-        background : $color-secondary;
+        background : $color--secondary;
 
       }
     }
@@ -21,13 +21,13 @@
 
   &--inverted {
     .ui-progressbar {
-      background-color : $color-secondary;
+      background-color : $color--secondary;
       &.ui-progressbar-determinate {
         .ui-progressbar-label {
-          color : $color-white;
+          color : $color--white;
         }
         .ui-progressbar-value {
-          background-color : $color-gray-30;
+          background-color : $color--gray-30;
         }
       }
     }

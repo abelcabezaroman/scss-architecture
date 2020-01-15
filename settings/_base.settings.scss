@@ -1,11 +1,34 @@
-$base-global: 8px;
+/* Global base
+   ****************************************************************************/
 
-$base-spacing-xs: $base-global * .25 !default;
-$base-spacing-s: $base-global * .5 !default;
-$base-spacing-m: $base-global * .75 !default;
-$base-spacing: $base-global !default;
-$base-spacing-l: $base-global * 2 !default;
-$base-spacing-xl: $base-global * 3 !default;
-$base-spacing-xxl: $base-global * 4 !default;
+$base-line: 8px;
 
-$base-wrapper-width: 1200px !default;
+/* Spacing
+   ****************************************************************************/
+
+$base-spacing-factor-xs: .25 !default;
+$base-spacing-factor-s: .5 !default;
+$base-spacing-factor-m: 2 !default;
+$base-spacing-factor-l: 3 !default;
+$base-spacing-factor-xl: 4 !default;
+$base-spacing-factor-xxl: 5 !default;
+
+$base-spacing-xs: $base-line * $base-spacing-factor-xs !default; // 8 * .25 = 2
+$base-spacing-s: $base-line * $base-spacing-factor-s !default; // 8 * .5 = 4
+$base-spacing: $base-line !default; // 8
+$base-spacing-m: $base-line * $base-spacing-factor-m !default; // 8 * 2 = 16
+$base-spacing-l: $base-line * $base-spacing-factor-l !default; // 8 * 3 = 24
+$base-spacing-xl: $base-line * $base-spacing-factor-xl !default; // 8 * 4 = 32
+$base-spacing-xxl: $base-line * $base-spacing-factor-xxl !default; // 8 * 5 = 64
+
+/* Wrapper
+   ****************************************************************************/
+
+$base-wrapper-factor-width: 150 !default;
+$base-wrapper-width: $base-line * $base-wrapper-factor-width !default; // 8 * 150 = 1200
+
+/* Font size
+   ****************************************************************************/
+
+$base-factor-font-size: 2;
+$base-font-size: $base-line * $base-factor-font-size; // 8 * 2 = 16

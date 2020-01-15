@@ -12,16 +12,11 @@
 .o-content {
   @include inuit-clearfix();
   display: block;
-  //display: block;
-  /* [1] */
   padding-top: $base-spacing;
   padding-bottom: $base-spacing;
-  // >:last-child {
-  //	padding-bottom: 0;
-  //}
 
   /* Size variants
-   ========================================================================== */
+     ****************************************************************************/
 
   &--zero {
     padding: 0;
@@ -67,6 +62,5 @@
   &--no-b {
     padding-bottom: 0;
   }
-
 }
 

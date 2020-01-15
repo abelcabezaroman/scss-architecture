@@ -2,12 +2,12 @@
 //  # VARIABLES
 //******************************************************************************
 
-$c-nav--space-arrow: 50px;
+$b-nav--space-arrow: 50px;
 
 //******************************************************************************
 //  # STYLES
 //******************************************************************************
-.c-nav {
+.b-nav {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -19,21 +19,21 @@ $c-nav--space-arrow: 50px;
     position: absolute;
     left: 0;
     top: 0;
-    transform: translate(0, calc(-100% + #{$c-nav--space-arrow}));
+    transform: translate(0, calc(-100% + #{$b-nav--space-arrow}));
     transition: transform 0.25s ease-in-out;
     transform-origin: left top;
     cursor: pointer;
     &:hover {
       transform: translate(0, 0);
-      .c-nav__text {
-        color: $color-white;
-        background-color: $color-gray-30;
+      .b-nav__text {
+        color: $color--white;
+        background-color: $color--gray-30;
       }
     }
     &--left {
       top: 100%;
-      transform: translate(-$c-nav--space-arrow, 0) rotate(-90deg);
-      .c-nav__text {
+      transform: translate(-$b-nav--space-arrow, 0) rotate(-90deg);
+      .b-nav__text {
         width: 100vh;
       }
       &:hover {
@@ -43,8 +43,8 @@ $c-nav--space-arrow: 50px;
     &--right {
       top: 0;
       left: 100%;
-      transform: translate($c-nav--space-arrow, 0) rotate(90deg);
-      .c-nav__text {
+      transform: translate($b-nav--space-arrow, 0) rotate(90deg);
+      .b-nav__text {
         width: 100vh;
       }
       &:hover {
@@ -57,7 +57,7 @@ $c-nav--space-arrow: 50px;
       &:hover {
         transform: translate(0, calc(-100%));
       }
-      .c-nav__arrow {
+      .b-nav__arrow {
         transform: rotate(-180deg);
       }
     }
@@ -66,7 +66,7 @@ $c-nav--space-arrow: 50px;
     font-size: $fs-18;
     text-transform: uppercase;
     font-family: Raleway-Regular;
-    color: $color-gray-80;
+    color: $color--gray-80;
 
     display: flex;
     align-items: center;
@@ -86,7 +86,7 @@ $c-nav--space-arrow: 50px;
     &:after {
       content: $i-form-arrowDown;
       font-family: 'my-icons';
-      color: $color-gray-30;
+      color: $color--gray-30;
     }
   }
 }

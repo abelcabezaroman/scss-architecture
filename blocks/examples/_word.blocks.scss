@@ -1,4 +1,4 @@
-.c-word {
+.b-word {
   &__letter, &__letter-wrap {
     display: block;
     position: relative;
@@ -8,7 +8,7 @@
     pointer-events: none;
     &:not(:last-child) {
       position: absolute;
-      color: $color-gray-30;
+      color: $color--gray-30;
       opacity: 0;
     }
   }
@@ -16,7 +16,7 @@
 
 // Como no hacerlo
 
-//.c-word {
+//.b-word {
 //  span {
 //    display: block;
 //    position: relative;
@@ -25,7 +25,7 @@
 //      pointer-events: none;
 //      &:not(:last-child) {
 //        position: absolute;
-//        color: $color-gray-30;
+//        color: $color--gray-30;
 //        opacity: 0;
 //      }
 //    }
